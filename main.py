@@ -1,8 +1,7 @@
-from fastapi import FastAPI
+from nicegui import ui
 
-app = FastAPI()
+# "hello" 출력
+ui.label('hello')
 
-
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
+# 앱 실행
+ui.run()
